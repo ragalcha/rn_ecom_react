@@ -6,8 +6,8 @@ export default function RouterPath() {
         <div>
             <Router>
                 <Routes>
-                    <Route exact path="/">
-                        <HomePage/>
+                    <Route exact path="/" element={<HomePage />}>
+                      
                     </Route>
                 </Routes>
             </Router>
