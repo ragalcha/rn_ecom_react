@@ -5,8 +5,6 @@ import RegisterPage from './pages/RegisterPage.jsx';
 import PageNotFound from './pages/PageNotFound.jsx';
 export default function RouterPath() {
     return (
-       
-            <Router>
                 <Routes>
                 <Route path="/" element={<HomePage />} />
                     <Route path="/home" element={<HomePage />} />
@@ -14,6 +12,5 @@ export default function RouterPath() {
                     <Route path="/register" element={<RegisterPage />} />
                     <Route path="*" element={<PageNotFound />} />
                 </Routes>
-            </Router>    
     )
 }
