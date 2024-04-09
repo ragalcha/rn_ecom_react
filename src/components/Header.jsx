@@ -1,4 +1,5 @@
 import React from 'react'
+import { Outlet, Link } from "react-router-dom";
 export default function Footer() {
     return (
         <>
@@ -10,9 +11,9 @@ export default function Footer() {
             <div className="offcanvas-menu-wrapper">
                 <div className="offcanvas__option">
                     <div className="offcanvas__links">
-                        <a href="#">Sign in</a>
-                        <a href="#">Login</a>
-                        <a href="#">FAQs</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/login">login</Link>
+                    <Link to="/register">register</Link>
                     </div>
                     <div className="offcanvas__top__hover">
                         <span>INR <i className="arrow_carrot-down"></i></span>
