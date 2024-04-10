@@ -94,6 +94,10 @@ function App() {
           element: <HomePage />,
         },
         {
+          path: "home",
+          element: <HomePage />,
+        },
+        {
           path: "login",
           element: <LoginPage />,
         },
