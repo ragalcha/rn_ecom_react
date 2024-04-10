@@ -1,4 +1,28 @@
+import { useEffect } from 'react'
 export default function HeroSideBar() {
+    useEffect(() => {
+        $(function () {
+            $(".hero__slider").owlCarousel({
+                loop: true,
+                margin: 0,
+                items: 1,
+                dots: false,
+                nav: true,
+                navText: ["<span class='arrow_left'><span/>", "<span class='arrow_right'><span/>"],
+                animateOut: 'fadeOut',
+                animateIn: 'fadeIn',
+                smartSpeed: 1200,
+                autoHeight: false,
+                autoplay: false
+            });
+            $('.set-bg').each(function () {
+
+                var bg = $(this).data('setbg');
+                $(this).css('background-image', 'url(' + bg + ')');
+            });
+        });
+
+    }, []);
     return (
         <section className="hero">
             <div className="hero__slider owl-carousel">

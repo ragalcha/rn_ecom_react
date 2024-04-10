@@ -5,14 +5,14 @@ import Footer from '../components/Footer.jsx'
 import { Toaster } from 'react-hot-toast'
 
 const MainPage = () => {
-  return (
-    <>
-    <Header />
-    <Toaster position="top-center" />
-    <Outlet />
-    <Footer />
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <Toaster position="top-center" />
+            <Outlet />
+            <Footer />
+        </>
+    )
 }
 
 export default MainPage

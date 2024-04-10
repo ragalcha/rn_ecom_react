@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 export default function Footer() {
     return(
         <section className="banner spad">
