@@ -5,11 +5,12 @@ import Footer from './components/Footer.jsx'
 import Header from './components/Header.jsx'
 import { Toaster } from 'react-hot-toast'
 import { useEffect } from 'react'
+import MainPage from './pages/MainPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import LoginPage from './pages/LoginPage.jsx'
 import RegisterPage from './pages/RegisterPage.jsx'
 import PageNotFound from './pages/PageNotFound.jsx'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import 'slicknav/dist/jquery.slicknav.js'
 import 'jquery-nice-select/js/jquery.nice-select.js'
 import 'jquery-countdown/dist/jquery.countdown.js'
@@ -18,6 +19,7 @@ import 'magnific-popup/dist/jquery.magnific-popup.js'
 import 'owl.carousel/dist/owl.carousel.js'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import 'jquery/dist/jquery.min.js'
+import { HashRouter } from "react-router-dom";
 import 'nicescroll/dist/jquery.nicescroll.min.js';
 function App() {
   // const [count, setCount] = useState(0)
@@ -130,14 +132,14 @@ function App() {
           Scroll
       --------------------- */
       console.log("hello i am ramaiya");
-      $("#nice-scroll")?.niceScroll({
-        cursorcolor: "#0d0d0d",
-        cursorwidth: "5px",
-        background: "#e5e5e5",
-        cursorborder: "",
-        autohidemode: true,
-        horizrailenabled: false
-      });
+      // $("#nice-scroll")?.niceScroll({
+      //   cursorcolor: "#0d0d0d",
+      //   cursorwidth: "5px",
+      //   background: "#e5e5e5",
+      //   cursorborder: "",
+      //   autohidemode: true,
+      //   horizrailenabled: false
+      // });
 
       /*------------------
           CountDown
@@ -169,9 +171,9 @@ function App() {
       /*------------------
           Magnific
       --------------------*/
-      $('.video-popup')?.magnificPopup({
-        type: 'iframe'
-      });
+      // $('.video-popup')?.magnificPopup({
+      //   type: 'iframe'
+      // });
 
       /*-------------------
           Quantity change
@@ -231,18 +233,39 @@ function App() {
     });
   }, []);
 
-return (
-  <>
-    {/* Header Section Begin */}
-    <Header />
-    <Toaster position="top-center" />
-     <Router>
-                <RouterPath />
-            </Router>    
-    {/* Footer section begin */}
-    <Footer />
-  </>
-)
-}
 
-export default App
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <MainPage />,
+      children: [
+        {
+          index: true,
+          element: <HomePage />,
+        },
+        {
+          path: "login",
+          element: <LoginPage />,
+        },
+        {
+          path: "register",
+          element: <RegisterPage />,
+        },
+        {
+          path: "*",
+          element: <PageNotFound />,
+        }
+      ],
+    },
+  ]);
+  
+    return (
+      <>
+        <RouterProvider router={router} />
+      </>
+    );
+  }
+  
+  export default App;
+  

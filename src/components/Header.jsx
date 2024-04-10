@@ -11,9 +11,9 @@ export default function Footer() {
             <div className="offcanvas-menu-wrapper">
                 <div className="offcanvas__option">
                     <div className="offcanvas__links">
-                    {/* <Link to="/">Home</Link>
-                    <Link to="/login">login</Link>
-                    <Link to="/register">register</Link> */}
+                        <Link to="/">Home</Link>
+                        <Link to="/login">login</Link>
+                        <Link to="/register">register</Link>
                     </div>
                     <div className="offcanvas__top__hover">
                         <span>INR <i className="arrow_carrot-down"></i></span>
@@ -45,8 +45,9 @@ export default function Footer() {
                             <div className="col-lg-6 col-md-5">
                                 <div className="header__top__right">
                                     <div className="header__top__links">
-                                        <a href="#">Sign in</a>
-                                        <a href="#">FAQs</a>
+                                        <Link to="/">Home</Link>
+                                        <Link to="/login">login</Link>
+                                        <Link to="/register">register</Link>
                                     </div>
                                     <div className="header__top__hover">
                                         <span>INR <i className="arrow_carrot-down"></i></span>
