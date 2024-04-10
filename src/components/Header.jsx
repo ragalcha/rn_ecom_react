@@ -61,9 +61,9 @@ export default function Footer() {
                     </div>
                 </div>
                 <div className="offcanvas__nav__option">
-                    <a href="#" className="search-switch"><img src="img/icon/search.png" alt="" /></a>
-                    <a href="#"><img src="img/icon/heart.png" alt="" /></a>
-                    <a href="#"><img src="img/icon/cart.png" alt="" /> <span>0</span></a>
+                    <Link to="/notfound" className="search-switch"><img src="img/icon/search.png" alt="" /></Link>
+                    <Link to="/notfound"><img src="img/icon/heart.png" alt="" /></Link>
+                    <Link to="/notfound"><img src="img/icon/cart.png" alt="" /> <span>0</span></Link>
                     <div className="price">0.00</div>
                 </div>
                 <div id="mobile-menu-wrap"></div>
@@ -102,7 +102,7 @@ export default function Footer() {
                     <div className="row">
                         <div className="col-lg-3 col-md-3">
                             <div className="header__logo">
-                                <a href=""><img src="img/icon/rn02.webp" alt="" /></a>
+                                <Link href=""><img src="img/icon/rn02.webp" alt="" /></Link>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6">
@@ -110,7 +110,7 @@ export default function Footer() {
                                 <ul>
                                     <li className="active"><a href="./index.html">Home</a></li>
                                     <li><a href="./shop.html">Shop</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a to="/notfound">Pages</a>
                                         <ul className="dropdown">
                                             <li><a href="./about.html">About Us</a></li>
                                             <li><a href="./shop-details.html">Shop Details</a></li>
@@ -126,9 +126,9 @@ export default function Footer() {
                         </div>
                         <div className="col-lg-3 col-md-3">
                             <div className="header__nav__option">
-                                <a href="#" className="search-switch"><img src="img/icon/search.png" alt="" /></a>
-                                <a href="#"><img src="img/icon/heart.png" alt="" /></a>
-                                <a href="#"><img src="img/icon/cart.png" alt="" /> <span>0</span></a>
+                                <Link to="/notfound" className="search-switch"><img src="img/icon/search.png" alt="" /></Link>
+                                <Link to="/notfound"><img src="img/icon/heart.png" alt="" /></Link>
+                                <Link to="/notfound"><img src="img/icon/cart.png" alt="" /> <span>0</span></Link>
                                 <div className="price">0.00</div>
                             </div>
                         </div>

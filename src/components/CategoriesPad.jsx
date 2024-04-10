@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 export default function CategoriesPad() {
     useEffect(() => {
         $(function () {
@@ -70,7 +71,7 @@ export default function CategoriesPad() {
                                 <p>Seconds</p>
                             </div>
                         </div>
-                        <a href="#" className="primary-btn">Shop now</a>
+                        <Link to="/notfound" className="primary-btn">Shop now</Link>
                     </div>
                 </div>
             </div>

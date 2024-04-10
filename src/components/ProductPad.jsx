@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 export default function PorductPad() {
     useEffect(() => {
         $(function () {
@@ -39,14 +40,14 @@ export default function PorductPad() {
                             <div className="product__item__pic set-bg" data-setbg="img/product/product-1.jpg">
                                 <span className="label">New</span>
                                 <ul className="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></a></li>
-                                    <li><a href="#"><img src="img/icon/search.png" alt="" /></a></li>
+                                    <li><Link to="/notfound"><img src="img/icon/heart.png" alt="" /></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/search.png" alt="" /></Link></li>
                                 </ul>
                             </div>
                             <div className="product__item__text">
                                 <h6>Piqué Biker Jacket</h6>
-                                <a href="#" className="add-cart">+ Add To Cart</a>
+                                <Link to="/notfound" className="add-cart">+ Add To Cart</Link>
                                 <div className="rating">
                                     <i className="fa fa-star-o"></i>
                                     <i className="fa fa-star-o"></i>
@@ -73,14 +74,14 @@ export default function PorductPad() {
                         <div className="product__item">
                             <div className="product__item__pic set-bg" data-setbg="img/product/product-2.jpg">
                                 <ul className="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></a></li>
-                                    <li><a href="#"><img src="img/icon/search.png" alt="" /></a></li>
+                                    <li><Link to="/notfound"><img src="img/icon/heart.png" alt="" /></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/search.png" alt="" /></Link></li>
                                 </ul>
                             </div>
                             <div className="product__item__text">
                                 <h6>Piqué Biker Jacket</h6>
-                                <a href="#" className="add-cart">+ Add To Cart</a>
+                                <Link to="/notfound" className="add-cart">+ Add To Cart</Link>
                                 <div className="rating">
                                     <i className="fa fa-star-o"></i>
                                     <i className="fa fa-star-o"></i>
@@ -108,14 +109,14 @@ export default function PorductPad() {
                             <div className="product__item__pic set-bg" data-setbg="img/product/product-3.jpg">
                                 <span className="label">Sale</span>
                                 <ul className="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></a></li>
-                                    <li><a href="#"><img src="img/icon/search.png" alt="" /></a></li>
+                                    <li><Link to="/notfound"><img src="img/icon/heart.png" alt="" /></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/search.png" alt="" /></Link></li>
                                 </ul>
                             </div>
                             <div className="product__item__text">
                                 <h6>Multi-pocket Chest Bag</h6>
-                                <a href="#" className="add-cart">+ Add To Cart</a>
+                                <Link to="/notfound" className="add-cart">+ Add To Cart</Link>
                                 <div className="rating">
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
@@ -142,14 +143,14 @@ export default function PorductPad() {
                         <div className="product__item">
                             <div className="product__item__pic set-bg" data-setbg="img/product/product-4.jpg">
                                 <ul className="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></a></li>
-                                    <li><a href="#"><img src="img/icon/search.png" alt="" /></a></li>
+                                    <li><Link to="/notfound"><img src="img/icon/heart.png" alt="" /></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/search.png" alt="" /></Link></li>
                                 </ul>
                             </div>
                             <div className="product__item__text">
                                 <h6>Diagonal Textured Cap</h6>
-                                <a href="#" className="add-cart">+ Add To Cart</a>
+                                <Link to="/notfound" className="add-cart">+ Add To Cart</Link>
                                 <div className="rating">
                                     <i className="fa fa-star-o"></i>
                                     <i className="fa fa-star-o"></i>
@@ -176,14 +177,14 @@ export default function PorductPad() {
                         <div className="product__item">
                             <div className="product__item__pic set-bg" data-setbg="img/product/product-5.jpg">
                                 <ul className="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></a></li>
-                                    <li><a href="#"><img src="img/icon/search.png" alt="" /></a></li>
+                                    <li><Link to="/notfound"><img src="img/icon/heart.png" alt="" /></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/search.png" alt="" /></Link></li>
                                 </ul>
                             </div>
                             <div className="product__item__text">
                                 <h6>Lether Backpack</h6>
-                                <a href="#" className="add-cart">+ Add To Cart</a>
+                                <Link to="/notfound" className="add-cart">+ Add To Cart</Link>
                                 <div className="rating">
                                     <i className="fa fa-star-o"></i>
                                     <i className="fa fa-star-o"></i>
@@ -211,14 +212,14 @@ export default function PorductPad() {
                             <div className="product__item__pic set-bg" data-setbg="img/product/product-6.jpg">
                                 <span className="label">Sale</span>
                                 <ul className="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></a></li>
-                                    <li><a href="#"><img src="img/icon/search.png" alt="" /></a></li>
+                                    <li><Link to="/notfound"><img src="img/icon/heart.png" alt="" /></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/search.png" alt="" /></Link></li>
                                 </ul>
                             </div>
                             <div className="product__item__text">
                                 <h6>Ankle Boots</h6>
-                                <a href="#" className="add-cart">+ Add To Cart</a>
+                                <Link to="/notfound" className="add-cart">+ Add To Cart</Link>
                                 <div className="rating">
                                     <i className="fa fa-star"></i>
                                     <i className="fa fa-star"></i>
@@ -245,14 +246,14 @@ export default function PorductPad() {
                         <div className="product__item">
                             <div className="product__item__pic set-bg" data-setbg="img/product/product-7.jpg">
                                 <ul className="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></a></li>
-                                    <li><a href="#"><img src="img/icon/search.png" alt="" /></a></li>
+                                    <li><Link to="/notfound"><img src="img/icon/heart.png" alt="" /></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/search.png" alt="" /></Link></li>
                                 </ul>
                             </div>
                             <div className="product__item__text">
                                 <h6>T-shirt Contrast Pocket</h6>
-                                <a href="#" className="add-cart">+ Add To Cart</a>
+                                <Link to="/notfound" className="add-cart">+ Add To Cart</Link>
                                 <div className="rating">
                                     <i className="fa fa-star-o"></i>
                                     <i className="fa fa-star-o"></i>
@@ -279,14 +280,14 @@ export default function PorductPad() {
                         <div className="product__item">
                             <div className="product__item__pic set-bg" data-setbg="img/product/product-8.jpg">
                                 <ul className="product__hover">
-                                    <li><a href="#"><img src="img/icon/heart.png" alt="" /></a></li>
-                                    <li><a href="#"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></a></li>
-                                    <li><a href="#"><img src="img/icon/search.png" alt="" /></a></li>
+                                    <li><Link to="/notfound"><img src="img/icon/heart.png" alt="" /></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/compare.png" alt="" /> <span>Compare</span></Link></li>
+                                    <li><Link to="/notfound"><img src="img/icon/search.png" alt="" /></Link></li>
                                 </ul>
                             </div>
                             <div className="product__item__text">
                                 <h6>Basic Flowing Scarf</h6>
-                                <a href="#" className="add-cart">+ Add To Cart</a>
+                                <Link to="/notfound" className="add-cart">+ Add To Cart</Link>
                                 <div className="rating">
                                     <i className="fa fa-star-o"></i>
                                     <i className="fa fa-star-o"></i>

@@ -9,20 +9,20 @@ export default function Footer() {
                         <div className="col-lg-3 col-md-6 col-sm-6">
                             <div className="footer__about">
                                 <div className="footer__logo">
-                                    <a href="#"><img src="img/icon/rn02.webp" alt="" /></a>
+                                    <Link to="/notfound"><img src="img/icon/rn02.webp" alt="" /></Link>
                                 </div>
                                 <p>The customer is at the heart of our unique business model, which includes design.</p>
-                                <a href="#"><img src="img/payment.png" alt="" /></a>
+                                <Link to="/notfound"><img src="img/payment.png" alt="" /></Link>
                             </div>
                         </div>
                         <div className="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
                             <div className="footer__widget">
                                 <h6>Shopping</h6>
                                 <ul>
-                                    <li><a href="#">Clothing Store</a></li>
-                                    <li><a href="#">Trending Shoes</a></li>
-                                    <li><a href="#">Accessories</a></li>
-                                    <li><a href="#">Sale</a></li>
+                                    <li><Link to="/notfound">Clothing Store</Link></li>
+                                    <li><Link to="/notfound">Trending Shoes</Link></li>
+                                    <li><Link to="/notfound">Accessories</Link></li>
+                                    <li><Link to="/notfound">Sale</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -30,10 +30,10 @@ export default function Footer() {
                             <div className="footer__widget">
                                 <h6>Shopping</h6>
                                 <ul>
-                                    <li><a href="#">Contact Us</a></li>
-                                    <li><a href="#">Payment Methods</a></li>
-                                    <li><a href="#">Delivary</a></li>
-                                    <li><a href="#">Return & Exchanges</a></li>
+                                    <li><Link to="/notfound">Contact Us</Link></li>
+                                    <li><Link to="/notfound">Payment Methods</Link></li>
+                                    <li><Link to="/notfound">Delivary</Link></li>
+                                    <li><Link to="/notfound">Return & Exchanges</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -59,7 +59,7 @@ export default function Footer() {
                                         document.write(new Date().getFullYear());
                                     </script>2020
                                     All rights reserved | This template is made with <i className="fa fa-heart-o"
-                                        aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                        aria-hidden="true"></i> by <Link href="https://colorlib.com" target="_blank">Colorlib</Link>
                                 </p>
 
                             </div>

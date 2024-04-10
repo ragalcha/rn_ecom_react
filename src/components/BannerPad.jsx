@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 export default function Footer() {
     return(
         <section className="banner spad">
@@ -11,7 +12,7 @@ export default function Footer() {
                         </div>
                         <div className="banner__item__text">
                             <h2>Clothing Collections 2030</h2>
-                            <a href="#">Shop now</a>
+                           <Link to="/notfound" href="#">Shop now</Link>
                         </div>
                     </div>
                 </div>
@@ -22,7 +23,7 @@ export default function Footer() {
                         </div>
                         <div className="banner__item__text">
                             <h2>Accessories</h2>
-                            <a href="#">Shop now</a>
+                           <Link to="/notfound" href="#">Shop now</Link>
                         </div>
                     </div>
                 </div>
@@ -33,7 +34,7 @@ export default function Footer() {
                         </div>
                         <div className="banner__item__text">
                             <h2>Shoes Spring 2030</h2>
-                            <a href="#">Shop now</a>
+                           <Link to="/notfound" href="#">Shop now</Link>
                         </div>
                     </div>
                 </div>
