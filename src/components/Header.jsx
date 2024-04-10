@@ -102,25 +102,25 @@ export default function Footer() {
                     <div className="row">
                         <div className="col-lg-3 col-md-3">
                             <div className="header__logo">
-                                <Link href=""><img src="img/icon/rn02.webp" alt="" /></Link>
+                                <Link to=""><img src="img/icon/rn02.webp" alt="" /></Link>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6">
                             <nav className="header__menu mobile-menu">
                                 <ul>
-                                    <li className="active"><a href="./index.html">Home</a></li>
-                                    <li><a href="./shop.html">Shop</a></li>
-                                    <li><a to="/notfound">Pages</a>
+                                    <li className="active"><Link to="./index.html">Home</Link></li>
+                                    <li><Link to="/notfound">Shop</Link></li>
+                                    <li><Link to="/notfound">Pages</Link>
                                         <ul className="dropdown">
-                                            <li><a href="./about.html">About Us</a></li>
-                                            <li><a href="./shop-details.html">Shop Details</a></li>
-                                            <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                                            <li><a href="./checkout.html">Check Out</a></li>
-                                            <li><a href="./blog-details.html">Blog Details</a></li>
+                                            <li><Link to="/notfound">About Us</Link></li>
+                                            <li><Link to="/notfound">Shop Details</Link></li>
+                                            <li><Link to="/notfound">Shopping Cart</Link></li>
+                                            <li><Link to="/notfound">Check Out</Link></li>
+                                            <li><Link to="/notfound">Blog Details</Link></li>
                                         </ul>
                                     </li>
-                                    <li><a href="./blog.html">Blog</a></li>
-                                    <li><a href="./contact.html">Contacts</a></li>
+                                    <li><Link to="/notfound">Blog</Link></li>
+                                    <li><Link to="/notfound">Contacts</Link></li>
                                 </ul>
                             </nav>
                         </div>
