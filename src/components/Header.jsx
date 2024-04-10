@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="offcanvas-menu-wrapper">
                 <div className="offcanvas__option">
                     <div className="offcanvas__links">
-                        <Link to="/">Home</Link>
+                        <Link to="/home">Home</Link>
                         <Link to="/login">login</Link>
                         <Link to="/register">register</Link>
                     </div>
@@ -83,7 +83,7 @@ export default function Footer() {
                             <div className="col-lg-6 col-md-5">
                                 <div className="header__top__right">
                                     <div className="header__top__links">
-                                        <Link to="/">Home</Link>
+                                        <Link to="/home">Home</Link>
                                         <Link to="/login">login</Link>
                                         <Link to="/register">register</Link>
                                     </div>
@@ -108,7 +108,7 @@ export default function Footer() {
                         <div className="col-lg-6 col-md-6">
                             <nav className="header__menu mobile-menu">
                                 <ul>
-                                    <li className="active"><Link to="./index.html">Home</Link></li>
+                                    <li className="active"><Link to="/home">Home</Link></li>
                                     <li><Link to="/notfound">Shop</Link></li>
                                     <li><Link to="/notfound">Pages</Link>
                                         <ul className="dropdown">
