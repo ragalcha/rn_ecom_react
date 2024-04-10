@@ -27,7 +27,7 @@ export default function LoginPage() {
 
 
         try {
-            const response = await axios.post(`http://localhost:3002/api/v1/user/login`, {
+            const response = await axios.post(`https://rn0420.onrender.com//api/v1/user/login`, {
                 userName: userName,
                 email: email,
                 password: password,
@@ -63,7 +63,7 @@ export default function LoginPage() {
 
     return (
         <>
-            <section className="vh-100">
+            <section className="login-page-container">
                 <div className="container py-5 h-100">
                     <div className="row d-flex align-items-center justify-content-center h-100">
                         <div className="col-md-8 col-lg-7 col-xl-6">

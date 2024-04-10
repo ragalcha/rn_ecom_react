@@ -24,6 +24,8 @@ export default function RegisterPage() {
             return;
         }
 
+       
+
         try {
             const userdata = JSON.stringify(user);
             console.log(userdata);
@@ -32,7 +34,7 @@ export default function RegisterPage() {
                     'Content-Type': 'application/json'
                 }
             };
-            const response = await axios.post(`http://localhost:3002/api/v1/user/register`, userdata, customConfig);
+            const response = await axios.post(`https://rn0420.onrender.com/api/v1/user/register`, userdata, customConfig);
 
             // console.log('Response:', response.data.status,response.data);
             if (response.data.statusCode === 400 || response.data.statusCode === 401) {
@@ -65,7 +67,7 @@ export default function RegisterPage() {
 
     return (
         <>
-            <section className="vh-100">
+            <section className="register-page-container">
                 <div className="container py-5 h-100">
                     <div className="row d-flex align-items-center justify-content-center h-100">
                         <div className="col-md-8 col-lg-7 col-xl-6">
